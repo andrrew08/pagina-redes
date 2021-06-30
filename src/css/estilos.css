@@ -1,81 +1,75 @@
-* {
-    margin: 0px;
-    padding: 0px;
+header img{
+    width: 130px;
+    height: auto;
+}
+/* Carusel de imagese mas overlay */
+main .carousel-inner img{
+    max-height: 80vh;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(70%);
 }
 
-header, nav, section,aside,footer{
-    display: block;
+#carousel{
+    position: relative;
+}
+#carousel .overley{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
 }
 
-body{
-    text-align: center;
+.overley .btn-iti{
+    background-color: brown;
+    color: white;
+    width: 150px;
+}
+/* ------------------------------------- */
+
+
+/* Navegación sub menu opciones malla */
+.card-header{
+    background-color: rgba(248, 248, 248, 0.5);
+    padding: 15px;
 }
 
-#agrupar {
-    width: 960px;
-    margin: 15px auto;
-    text-align: left;
+.card-header .nav{
+
+}
+.card-header  .nav-item{
+    margin-right: 10px;
+}
+.card-header  .nav-item .active{
+    background-color: brown; 
+    color: white;   
 }
 
-header {
-    text-align: center;
-}
+/* ------------------------------------ */
 
-nav {
-    background: rgb(82, 82, 92);
-    text-align: center;
-    padding: 12px;
-    margin: 20px 0px 20px 0px;
-}
 
-nav li {
-    display: inline-block;
-    padding: 6px;
-    font: 14px verdana;
-    color: darkorange;
-    background: white;
-    width: 100px;
-    margin-right: 40px;
-    border-radius: 4px;
+footer{
+    background-color: white;
+    color: lightslategray;
 }
-a {
-    color: darkorange;
+footer img{
+    width: 122px;
+}
+footer ul {
+    list-style: none;
+}
+footer a {
     text-decoration: none;
+    color: lightslategray;
 }
-
-.menu_select {
-   /* background: rgb(226, 225, 223); */
-   background: darkorange;
+footer .redes {
+    display: flex;
+    justify-content: start;
 }
-.menu_letra{
-    color: white;
-    font-weight: bold;
-}
-
-section {
-    float: left;
-    width: 632px;
-    padding-bottom: 80px;
-}
-
-aside {
-    float: left;
-    width: 280px;
-    padding: 20px;
-
-    color: rgb(82, 82, 92);;
-    border: 1px solid rgb(82, 82, 92);
-    border-radius: 8px;
-
-}
-#form_j{
-    padding-bottom: 6px;
-}
-
-footer {
-    clear: both;
-    text-align: center;
-    padding: 20px;
-    color: white;
-    background: rgb(82, 82, 92);
+footer .redes li a{
+    width: 50px;
 }
